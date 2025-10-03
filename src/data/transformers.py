@@ -255,6 +255,8 @@ class FullPipeline1:
         return X_test, y_test
         
     def inverse_y(self, y_pred):
-        return self.y_pipeline.named_steps['label_encode'].inverse_transform(y_pred)
+        y_pred = np.array(y_pred)
+        y_df = pd.DataFrame(y_pred, columns=['booking_status'])
+        return self.y_pipeline.named_steps['label_encode'].inverse_transform(y_df)['booking_status'].values
     
 

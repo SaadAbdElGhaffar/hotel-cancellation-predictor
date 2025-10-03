@@ -82,13 +82,15 @@ async def predict_booking(input_data: BookingInput):
     prediction = model.predict(processed_data)
     prediction_proba = model.predict_proba(processed_data)[0]
     
-    status = "Canceled" if prediction[0] == 0 else "Not_Canceled"
+    status = full_pipeline.inverse_y(prediction)[0]
+    label_0 = full_pipeline.inverse_y([0])[0]
+    label_1 = full_pipeline.inverse_y([1])[0]
     
     return {
         "prediction": status,
         "probability": {
-            "Canceled": float(prediction_proba[0]),
-            "Not_Canceled": float(prediction_proba[1])
+            label_0: float(prediction_proba[0]),
+            label_1: float(prediction_proba[1])
         }
     }
 
