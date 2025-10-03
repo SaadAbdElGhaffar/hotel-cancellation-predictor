@@ -192,9 +192,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # Docker
-Dockerfile
-docker-compose.yml
-.dockerignore
+# Dockerfile
+# docker-compose.yml
+# .dockerignore
 
 # Kubernetes
 *.yaml
