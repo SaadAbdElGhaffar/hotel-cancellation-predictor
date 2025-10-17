@@ -273,6 +273,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 • FastAPI team for the web framework
 • Streamlit team for the web interface framework
 
+## 📬 Contact
+- **GitHub:** [SaadAbdElGhaffar](https://github.com/SaadAbdElGhaffar)  
+- **LinkedIn:** [Saad Abd El-Ghaffar](https://www.linkedin.com/in/saadabdelghaffar/)  
+- **Email:** [saad.abdelghaffar.ai@gmail.com](mailto:saad.abdelghaffar.ai@gmail.com)  
+- **Kaggle:** [@abdocan](https://www.kaggle.com/abdocan)
+
 ---
 
 ⭐ **Star this repository if you found it helpful!**
